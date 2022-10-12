@@ -15,6 +15,9 @@ const config: HardhatUserConfig = {
       chainId: 5,
     },
   },
+  etherscan: {
+    apiKey: ETHERSCAN_API_KEY,
+  },
   solidity: "0.8.17",
 }
 

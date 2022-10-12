@@ -6,7 +6,9 @@
   "license": "MIT",
   "scripts": {
     "start": "yarn hardhat run scripts/deploy.ts",
-    "start:goerli": "yarn hardhat run scripts/deploy.ts --network goerli"
+    "start:goerli": "yarn hardhat run scripts/deploy.ts --network goerli",
+    "compile": "yarn hardhat compile",
+    "verify": "yarn hardhat verify --network goerli"
   },
   "devDependencies": {
     "@ethersproject/abi": "^5.4.7",

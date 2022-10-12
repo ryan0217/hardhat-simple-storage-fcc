@@ -6,7 +6,7 @@ pragma solidity ^0.8.17;
 
 // Author: sunrui1996
 contract Lock {
-    uint public immutable unlockTime;
+    uint public unlockTime;
     address payable public immutable owner;
 
     event Withdrawal(uint amount, uint when);
@@ -19,6 +19,10 @@ contract Lock {
 
         unlockTime = _unlockTime;
         owner = payable(msg.sender);
+    }
+
+    function setUnlockTime(uint _unlockTime) public {
+        unlockTime = _unlockTime;
     }
 
     function withdraw() public {
