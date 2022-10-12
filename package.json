@@ -5,7 +5,8 @@
   "author": "sunrui1996 <183428323@qq.com>",
   "license": "MIT",
   "scripts": {
-    "start": "yarn hardhat run scripts/deploy.ts --network goerli"
+    "start": "yarn hardhat run scripts/deploy.ts",
+    "start:goerli": "yarn hardhat run scripts/deploy.ts --network goerli"
   },
   "devDependencies": {
     "@ethersproject/abi": "^5.4.7",

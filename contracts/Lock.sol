@@ -1,9 +1,10 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.9;
+pragma solidity ^0.8.17;
 
 // Uncomment this line to use console.log
 // import "hardhat/console.sol";
 
+// Author: sunrui1996
 contract Lock {
     uint public immutable unlockTime;
     address payable public immutable owner;
