@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "yarn hardhat run scripts/deploy.ts",
+    "start:localhost": "yarn hardhat run scripts/deploy.ts --network localhost",
     "start:goerli": "yarn hardhat run scripts/deploy.ts --network goerli",
     "compile": "yarn hardhat compile",
     "verify": "yarn hardhat verify --network goerli"
